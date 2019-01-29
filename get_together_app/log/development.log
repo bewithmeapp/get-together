@@ -1,0 +1,288 @@
+  [1m[35m (409.5ms)[0m  [1m[35mCREATE DATABASE "get_together_app_development" ENCODING = 'unicode'[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (263.7ms)[0m  [1m[35mCREATE DATABASE "get_together_app_test" ENCODING = 'unicode'[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (19.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (27.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateArtists (20190129103829)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (27.0ms)[0m  [1m[35mCREATE TABLE "artists" ("id" bigserial primary key, "artist_name" character varying, "artist_type" character varying, "images" character varying, "phone" character varying, "location" character varying, "description" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190129103829_create_artists.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190129103829"]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-29 10:39:36.416577"], ["updated_at", "2019-01-29 10:39:36.416577"]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mArtist Create (12.8ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Waad Alturki"], ["artist_type", "Makeup Artist"], ["images", "https://www.arabiaweddings.com/sites/default/files/uploads/2016/01/13/waad_al_turki_makeup_3.png"], ["phone", "05050505050"], ["location", "Riyadh, KSA"], ["description", ""], ["email", "waad@gmail.com"], ["created_at", "2019-01-29 10:40:19.023191"], ["updated_at", "2019-01-29 10:40:19.023191"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Muna Alnoman"], ["artist_type", "Makeup Artist"], ["images", "https://i.ytimg.com/vi/f3KxAd9AyrY/maxresdefault.jpg"], ["phone", "05050505050"], ["location", "Jeddah, KSA"], ["description", ""], ["email", "muna@gmail.com"], ["created_at", "2019-01-29 10:40:19.038323"], ["updated_at", "2019-01-29 10:40:19.038323"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Hanan Alganem"], ["artist_type", "Photographer"], ["images", "https://scontent-ort2-2.cdninstagram.com/vp/5b5dbc2d32cada7e2f50870f8903e3f3/5CF9EAE5/t51.2885-15/e35/49517450_395060397924934_4140319419048176669_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com"], ["phone", "05050505050"], ["location", "Riyadh, KSA"], ["description", ""], ["email", "hanan@gmail.com"], ["created_at", "2019-01-29 10:40:19.040196"], ["updated_at", "2019-01-29 10:40:19.040196"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Turki Abdullah"], ["artist_type", "Photographer"], ["images", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1GwB14-2Nphg1yrh1Qbu6Jt5vX_B2B3JYUApP5-VlERe7Jv75w"], ["phone", "05050505050"], ["location", "Alkhobar, KSA"], ["description", ""], ["email", "muna@gmail.com"], ["created_at", "2019-01-29 10:40:19.041838"], ["updated_at", "2019-01-29 10:40:19.041838"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateModels (20190129104228)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (27.3ms)[0m  [1m[35mCREATE TABLE "models" ("id" bigserial primary key, "model_name" character varying, "model_type" character varying, "skin_tone" character varying, "skin_condition" character varying, "face_shape" character varying, "eye_color" character varying, "hair_color" character varying, "weight" float, "height" float, "date_of_birth" date, "gender" character varying, "bust" float, "waist" float, "hips" float, "shoes_size" float, "model_images" character varying, "phone" character varying, "location" character varying, "description" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190129104228_create_models.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190129104228"]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mArtist Create (6.7ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Waad Alturki"], ["artist_type", "Makeup Artist"], ["images", "https://www.arabiaweddings.com/sites/default/files/uploads/2016/01/13/waad_al_turki_makeup_3.png"], ["phone", "05050505050"], ["location", "Riyadh, KSA"], ["description", ""], ["email", "waad@gmail.com"], ["created_at", "2019-01-29 11:12:07.237848"], ["updated_at", "2019-01-29 11:12:07.237848"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (114.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Muna Alnoman"], ["artist_type", "Makeup Artist"], ["images", "https://i.ytimg.com/vi/f3KxAd9AyrY/maxresdefault.jpg"], ["phone", "05050505050"], ["location", "Jeddah, KSA"], ["description", ""], ["email", "muna@gmail.com"], ["created_at", "2019-01-29 11:12:07.360931"], ["updated_at", "2019-01-29 11:12:07.360931"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Hanan Alganem"], ["artist_type", "Photographer"], ["images", "https://scontent-ort2-2.cdninstagram.com/vp/5b5dbc2d32cada7e2f50870f8903e3f3/5CF9EAE5/t51.2885-15/e35/49517450_395060397924934_4140319419048176669_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com"], ["phone", "05050505050"], ["location", "Riyadh, KSA"], ["description", ""], ["email", "hanan@gmail.com"], ["created_at", "2019-01-29 11:12:07.363157"], ["updated_at", "2019-01-29 11:12:07.363157"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Turki Abdullah"], ["artist_type", "Photographer"], ["images", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1GwB14-2Nphg1yrh1Qbu6Jt5vX_B2B3JYUApP5-VlERe7Jv75w"], ["phone", "05050505050"], ["location", "Alkhobar, KSA"], ["description", ""], ["email", "muna@gmail.com"], ["created_at", "2019-01-29 11:12:07.364933"], ["updated_at", "2019-01-29 11:12:07.364933"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to DeleteFromModel (20190129111319)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (65.3ms)[0m  [1m[35mALTER TABLE "model" DROP COLUMN "mode_name"[0m
+  ↳ db/migrate/20190129111319_delete_from_model.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to DeleteFromModel (20190129111319)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (18.6ms)[0m  [1m[35mALTER TABLE "models" DROP COLUMN "model_name"[0m
+  ↳ db/migrate/20190129111319_delete_from_model.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190129111319"]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to DeleteModelFromSeeds (20190129111643)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (8.3ms)[0m  [1m[35mDROP TABLE "models"[0m
+  ↳ db/migrate/20190129111643_delete_model_from_seeds.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190129111643"]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (20.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateManikins (20190129111946)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (27.0ms)[0m  [1m[35mCREATE TABLE "manikins" ("id" bigserial primary key, "manikin_name" character varying, "manikin_type" character varying, "skin_tone" character varying, "skin_condition" character varying, "face_shape" character varying, "eye_color" character varying, "hair_color" character varying, "weight" float, "height" float, "date_of_birth" date, "gender" character varying, "bust" float, "waist" float, "hips" float, "shoes_size" float, "manikin_images" character varying, "phone" character varying, "location" character varying, "description" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190129111946_create_manikins.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190129111946"]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mArtist Create (0.9ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Waad Alturki"], ["artist_type", "Makeup Artist"], ["images", "https://www.arabiaweddings.com/sites/default/files/uploads/2016/01/13/waad_al_turki_makeup_3.png"], ["phone", "05050505050"], ["location", "Riyadh, KSA"], ["description", ""], ["email", "waad@gmail.com"], ["created_at", "2019-01-29 11:22:17.504973"], ["updated_at", "2019-01-29 11:22:17.504973"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Muna Alnoman"], ["artist_type", "Makeup Artist"], ["images", "https://i.ytimg.com/vi/f3KxAd9AyrY/maxresdefault.jpg"], ["phone", "05050505050"], ["location", "Jeddah, KSA"], ["description", ""], ["email", "muna@gmail.com"], ["created_at", "2019-01-29 11:22:17.513651"], ["updated_at", "2019-01-29 11:22:17.513651"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Hanan Alganem"], ["artist_type", "Photographer"], ["images", "https://scontent-ort2-2.cdninstagram.com/vp/5b5dbc2d32cada7e2f50870f8903e3f3/5CF9EAE5/t51.2885-15/e35/49517450_395060397924934_4140319419048176669_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com"], ["phone", "05050505050"], ["location", "Riyadh, KSA"], ["description", ""], ["email", "hanan@gmail.com"], ["created_at", "2019-01-29 11:22:17.515310"], ["updated_at", "2019-01-29 11:22:17.515310"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("artist_name", "artist_type", "images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["artist_name", "Turki Abdullah"], ["artist_type", "Photographer"], ["images", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1GwB14-2Nphg1yrh1Qbu6Jt5vX_B2B3JYUApP5-VlERe7Jv75w"], ["phone", "05050505050"], ["location", "Alkhobar, KSA"], ["description", ""], ["email", "muna@gmail.com"], ["created_at", "2019-01-29 11:22:17.516991"], ["updated_at", "2019-01-29 11:22:17.516991"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mManikin Create (24.3ms)[0m  [1m[32mINSERT INTO "manikins" ("manikin_name", "manikin_type", "skin_tone", "skin_condition", "face_shape", "eye_color", "hair_color", "weight", "height", "date_of_birth", "gender", "bust", "waist", "hips", "shoes_size", "manikin_images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22) RETURNING "id"[0m  [["manikin_name", "Sara"], ["manikin_type", "Jewelry"], ["skin_tone", "Light Brown"], ["skin_condition", "normal"], ["face_shape", "Round"], ["eye_color", "dark brown"], ["hair_color", "black"], ["weight", 58.0], ["height", 160.0], ["date_of_birth", "1993-12-04"], ["gender", "female"], ["bust", 91.5], ["waist", 74.0], ["hips", 105.0], ["shoes_size", 42.0], ["manikin_images", ""], ["phone", "0512345678"], ["location", "Riyadh, KSA"], ["description", ""], ["email", "sara@gmail.com"], ["created_at", "2019-01-29 11:22:17.540441"], ["updated_at", "2019-01-29 11:22:17.540441"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mManikin Create (0.3ms)[0m  [1m[32mINSERT INTO "manikins" ("manikin_name", "manikin_type", "skin_tone", "skin_condition", "face_shape", "eye_color", "hair_color", "weight", "height", "date_of_birth", "gender", "bust", "waist", "hips", "shoes_size", "manikin_images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22) RETURNING "id"[0m  [["manikin_name", "Ziad"], ["manikin_type", "Fashion"], ["skin_tone", "Olive"], ["skin_condition", "normal"], ["face_shape", "Diamond"], ["eye_color", "light brown"], ["hair_color", "light brown"], ["weight", 83.0], ["height", 182.0], ["date_of_birth", "1995-12-04"], ["gender", "male"], ["bust", 91.5], ["waist", 74.0], ["hips", 105.0], ["shoes_size", 42.0], ["manikin_images", ""], ["phone", "0512345678"], ["location", "Jeddah, KSA"], ["description", ""], ["email", "ziad@gmail.com"], ["created_at", "2019-01-29 11:22:17.568133"], ["updated_at", "2019-01-29 11:22:17.568133"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mManikin Create (0.4ms)[0m  [1m[32mINSERT INTO "manikins" ("manikin_name", "manikin_type", "skin_tone", "skin_condition", "face_shape", "eye_color", "hair_color", "weight", "height", "date_of_birth", "gender", "bust", "waist", "hips", "shoes_size", "manikin_images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22) RETURNING "id"[0m  [["manikin_name", "Noor"], ["manikin_type", "Makeup"], ["skin_tone", "light brown"], ["skin_condition", "normal"], ["face_shape", "Round"], ["eye_color", "light brown"], ["hair_color", "black"], ["weight", 58.0], ["height", 160.0], ["date_of_birth", "1993-12-04"], ["gender", "female"], ["bust", 91.5], ["waist", 74.0], ["hips", 105.0], ["shoes_size", 42.0], ["manikin_images", ""], ["phone", "0512345678"], ["location", "Riyadh, KSA"], ["description", ""], ["email", "sara@gmail.com"], ["created_at", "2019-01-29 11:22:17.571062"], ["updated_at", "2019-01-29 11:22:17.571062"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mManikin Create (0.3ms)[0m  [1m[32mINSERT INTO "manikins" ("manikin_name", "manikin_type", "skin_tone", "skin_condition", "face_shape", "eye_color", "hair_color", "weight", "height", "date_of_birth", "gender", "bust", "waist", "hips", "shoes_size", "manikin_images", "phone", "location", "description", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22) RETURNING "id"[0m  [["manikin_name", "Qusai"], ["manikin_type", "Photograpy"], ["skin_tone", "light brown"], ["skin_condition", "normal"], ["face_shape", "Round"], ["eye_color", "light brown"], ["hair_color", "black"], ["weight", 58.0], ["height", 160.0], ["date_of_birth", "1993-12-04"], ["gender", "female"], ["bust", 91.5], ["waist", 74.0], ["hips", 105.0], ["shoes_size", 42.0], ["manikin_images", ""], ["phone", "0512345678"], ["location", "Riyadh, KSA"], ["description", ""], ["email", "sara@gmail.com"], ["created_at", "2019-01-29 11:22:17.574682"], ["updated_at", "2019-01-29 11:22:17.574682"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateUsers (20190129121442)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (28.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "password_digest" character varying, "email" character varying, "auth_token" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190129121442_create_users.rb:3
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_auth_token" ON "users"  ("auth_token")[0m
+  ↳ db/migrate/20190129121442_create_users.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190129121442"]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to DeleteUsersFromSeeds (20190129123050)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (7.8ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ db/migrate/20190129123050_delete_users_from_seeds.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190129123050"]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (12.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1453958630391116220)[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/maymo7a/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273

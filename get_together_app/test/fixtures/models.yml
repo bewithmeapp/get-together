@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  model_name: MyString
+  model_type: MyString
+  skin_tone: MyString
+  skin_condition: MyString
+  face_shape: MyString
+  eye_color: MyString
+  hair_color: MyString
+  weight: 1.5
+  height: 1.5
+  date_of_birth: 2019-01-29
+  gender: MyString
+  bust: 1.5
+  waist: 1.5
+  hips: 1.5
+  shoes_size: 1.5
+  model_images: MyString
+  phone: MyString
+  location: MyString
+  description: MyString
+  email: MyString
+
+two:
+  model_name: MyString
+  model_type: MyString
+  skin_tone: MyString
+  skin_condition: MyString
+  face_shape: MyString
+  eye_color: MyString
+  hair_color: MyString
+  weight: 1.5
+  height: 1.5
+  date_of_birth: 2019-01-29
+  gender: MyString
+  bust: 1.5
+  waist: 1.5
+  hips: 1.5
+  shoes_size: 1.5
+  model_images: MyString
+  phone: MyString
+  location: MyString
+  description: MyString
+  email: MyString

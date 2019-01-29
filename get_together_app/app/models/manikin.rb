@@ -1,0 +1,2 @@
+class Manikin < ApplicationRecord
+end
