@@ -1,2 +1,19 @@
-<h1>Artists#index</h1>
-<p>Find me in app/views/artists/index.html.erb</p>
+<h1>Artists index</h1>
+
+
+<%= link_to 'New Artist', new_artist_path %>
+
+<% @artists.each do |artist| %>
+    <div>
+    <h1> <%= artist.artist_name %></h1>
+    <p>Images: <%= artist.images %></p>
+    <p>Artist type: <%= artist.artist_type %></p>
+    <p>Phone: <%= artist.phone %></p>
+    <p>Location: <%= artist.location %></p>
+    <p>Description: <%= artist.description %></p>
+    <p>Email: <%= artist.email %></p>
+
+    <%= button_to 'Show', artist_path(artist), method: :get %> 
+    <%= button_to 'Edit', edit_artist_path(artist), method: :get %> 
+    </div>
+  <%end%>
