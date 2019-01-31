@@ -21,11 +21,11 @@ class ArtistsController < ApplicationController
   end
 
   def edit
-    @artist
+    # @artist
   end
 
   def show
-    @artist
+    # @artist
   end
 
 

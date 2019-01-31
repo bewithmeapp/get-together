@@ -18,11 +18,11 @@ class ManikinsController < ApplicationController
   
 
   def show
-    @manikin
+    
   end
 
   def edit
-    @manikin
+    
   end
 
   def new
