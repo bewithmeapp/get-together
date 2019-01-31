@@ -9,11 +9,19 @@ class ArtistsController < ApplicationController
   def create
     @artist = Artist.create(artist_params)
     if @artist.save 
+<<<<<<< HEAD
         session[:artist_id] = @artist.id 
         redirect_to @artist
       else 
         redirect_to '/signup' 
       end 
+=======
+	    session[:artist_id] = @artist.id 
+	    redirect_to @artist
+	  else 
+	    redirect_to '/signup' 
+	  end 
+>>>>>>> 3e465393f69e11c5aa1cdee54115a2637fc03aa1
   end
   
   def new

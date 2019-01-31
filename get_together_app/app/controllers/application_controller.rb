@@ -18,4 +18,8 @@ class ApplicationController < ActionController::Base
     def require_artist 
         redirect_to '/login' unless current_artist
     end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 3e465393f69e11c5aa1cdee54115a2637fc03aa1

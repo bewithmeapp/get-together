@@ -9,12 +9,21 @@ class ManikinsController < ApplicationController
   def create
     @manikin = Manikin.create(manikin_params)
     if @manikin.save 
+<<<<<<< HEAD
         session[:manikin_id] = @manikin.id 
         redirect_to  @manikin 
       else 
         redirect_to '/signup' 
       end 
     end  
+=======
+	    session[:manikin_id] = @manikin.id 
+	    redirect_to  @manikin 
+	  else 
+	    redirect_to '/signup' 
+	  end 
+	end  
+>>>>>>> 3e465393f69e11c5aa1cdee54115a2637fc03aa1
   
 
   def show
@@ -57,4 +66,8 @@ class ManikinsController < ApplicationController
     )
   end
 
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 3e465393f69e11c5aa1cdee54115a2637fc03aa1
