@@ -1,0 +1,15 @@
+<%= form_for @artist do |form| %>
+
+Artist Name: <%= form.text_field :artist_name %> <br/>
+Artist Type: <%= form.select :artist_type,  ['Makeup Artist', 'Photographer', 'Fashion Designer', 'Jewelry Designer', ] %> <br/>
+Images: <%= form.text_field :images %> <br/>
+Phone: <%= form.telephone_field :phone %> <br/>
+Location: <%= form.text_field :location %> <br/>
+Description: <%= form.text_area :description %> <br/>
+Email: <%= form.email_field :email %> <br/>
+Password: <%= form.password_field :password %><br/>
+
+
+  <%= form.submit %>
+
+<%end%>

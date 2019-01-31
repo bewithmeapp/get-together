@@ -10,6 +10,24 @@
   </head>
 
   <body>
+    <% if current_manikin %> 
+      <ul>
+        <li><%= current_manikin.email %></li> 
+        <li><%= link_to "Log out Model", logout_path, method: "delete" %></li>
+      </ul>
+    <% elsif current_artist %>
+      <ul>
+        <li><%= current_artist.email %></li> 
+        <li><%= link_to "Log out Artist", logout_path, method: "delete" %></li>
+      </ul>
+    <% else %> 
+      <ul>
+        <li><%= link_to "Model Signup", 'signup' %></a></li> 
+        <li><%= link_to "Artist Signup", 'artists/signup' %></a></li> 
+        <li><%= link_to "Login", 'login' %></a></li>
+      </ul>
+    <% end %>
     <%= yield %>
+    
   </body>
 </html>

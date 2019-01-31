@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Artist.destroy_all
+Manikin.destroy_all
 
 Artist.create({artist_name: "Waad Alturki", artist_type: "Makeup Artist", images: "https://www.arabiaweddings.com/sites/default/files/uploads/2016/01/13/waad_al_turki_makeup_3.png", phone: "05050505050", location:"Riyadh, KSA", description: "", email:"waad@gmail.com"})
 Artist.create({artist_name: "Muna Alnoman", artist_type: "Makeup Artist", images: "https://i.ytimg.com/vi/f3KxAd9AyrY/maxresdefault.jpg", phone: "05050505050", location:"Jeddah, KSA", description: "", email:"muna@gmail.com"})

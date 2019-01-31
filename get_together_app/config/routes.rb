@@ -1,11 +1,23 @@
 Rails.application.routes.draw do
 
- 
 
-  get 'manikins/edit'
-  get 'manikins/index'
-  get 'manikins/new'
-  get 'manikins/show'
+
+  
+  get '/login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  
+  delete 'logout' => 'sessions#destroy'
+  
+  
+  get 'signup'  => 'manikins#new' 
+  resources :manikins
+
+  # get 'manikins/edit'
+  # get 'manikins/index'
+  # get 'manikins/new'
+  # get 'manikins/show'
+
+  get 'artists/signup'  => 'artists#new'
   resources :artists
   # get 'artists/edit'
   # get 'artists/index'
