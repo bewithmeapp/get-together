@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   # get 'manikins/new'
   # get 'manikins/show'
 
-  get 'signup'  => 'artists#new'
+  get 'artists/signup'  => 'artists#new'
   resources :artists
   # get 'artists/edit'
   # get 'artists/index'
