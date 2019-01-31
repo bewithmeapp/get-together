@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
  
 
+  get 'bookings/edit'
+  get 'bookings/index'
+  get 'bookings/new'
+  get 'bookings/show'
   get 'manikins/edit'
   get 'manikins/index'
   get 'manikins/new'
