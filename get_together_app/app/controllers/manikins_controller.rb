@@ -1,6 +1,7 @@
 class ManikinsController < ApplicationController
   before_action :set_manikin, only: [:show, :edit, :update, :destroy]
   before_action :require_manikin, only: [:edit, :update, :show, :destroy]
+  
 
   def index
     @manikins = Manikin.all
@@ -18,11 +19,13 @@ class ManikinsController < ApplicationController
   
 
   def show
+    # here goes the calender
+    @manikin
     
   end
 
   def edit
-    
+    @manikin
   end
 
   def new

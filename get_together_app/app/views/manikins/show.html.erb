@@ -6,13 +6,13 @@
 <%= button_to 'Back', manikins_path %>
 
 <div>
-    <p>Model images: <%= @manikin.manikin_images %></p>
+    <p>Model images: <%= image_tag(@manikin.manikin_images) %></p>
     <p>Model name: <%= @manikin.manikin_name %> </p>
     <p>Modeling type: <%= @manikin.manikin_type %> </p>
     <p>Skin tone: <%= @manikin.skin_tone %> </p>
     <p>Skin condition: <%= @manikin.skin_condition %> </p>
     <p>Face shape: <%= @manikin.face_shape %> </p>
-    <p>Eye color: <%= @manikin.eye_color %></p>
+    <p>Eye color: <%= @manik in.eye_color %></p>
     <p>Hair color: <%= @manikin.hair_color %> </p>
     <p>Weight: <%= @manikin.weight %> </p>
     <p>Height: <%= @manikin.height %> </p>

@@ -5,6 +5,8 @@
 
 <% @manikins.each do |manikin| %>
 <div>
+    
+    <p>Images <%= manikin.manikin_images %></p>
     <p>Model Name <%= manikin.manikin_name %></p>
     <p>Modeling Type <%= manikin.manikin_type %></p>
     <p>Skin tone <%= manikin.skin_tone %></p>
@@ -20,7 +22,6 @@
     <p>Waist <%= manikin.waist %></p>
     <p>Hips <%= manikin.hips %></p>
     <p>Shoes size <%= manikin.shoes_size %></p>
-    <p>Images <%= manikin.manikin_images %></p>
     <p> Phone number <%= manikin.phone %></p>
     <p>Location <%= manikin.location %></p>
     <p>Description <%= manikin.description %></p>
